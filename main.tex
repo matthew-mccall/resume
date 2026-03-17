@@ -1,6 +1,6 @@
-\documentclass[12pt]{article}
+\documentclass[11pt]{article}
 \usepackage[document]{ragged2e}
-\usepackage[letterpaper, margin=1in]{geometry}
+\usepackage[letterpaper, margin=0.5in]{geometry}
 
 \usepackage{amsmath}
 \usepackage{amsthm}
@@ -12,40 +12,77 @@
 \usepackage{float}    % force figure position to match source
 \usepackage{fontspec}
 \usepackage{graphicx}
-\usepackage{lipsum}
 \usepackage{listings}
 \usepackage{pgfplots} % graph functions
 \usepackage{setspace}
 \usepackage{shellesc}
 \usepackage{tabularx} % arbitrary table column widths
 \usepackage{tikz}     % general drawing
+\usepackage{titlesec}  % control heading sizes and spacing
 
 \input{config.tex}
 
-\title{Homework 0 \\ \large Course Name \\ Section 0}
-\author{Matthew McCall}
-
 \begin{document}
 
-\maketitle
-\doublespacing{}
+\begin{center}
+\LARGE\bfseries Matthew McCall \\
+\normalsize\normalfont Branford, CT \,\textbullet\, m-mccall@outlook.com \,\textbullet\, www.linkedin.com/in/96d9
+\end{center}
 
-\section{Hello World!}
-\lipsum
+\textbf{Skills:} C++, GNU/Linux, Git, MATLAB, KiCad, SPICE, SystemVerilog, SolidWorks, LaTeX, MS Word, Excel, PowerPoint
 
-\section{Graph}
-\embeddot{graphs/example}
+\section*{Education}
+\company{Rensselaer Polytechnic Institute}{Troy, NY}{}
+Bachelor's in Computer Science and Computer Systems Engineering \hfill \textbf{May 2026} \\
+\textbf{Relevant Coursework:} Computer Hardware Design, Microprocessor Systems, Space Vehicle Design
 
-\section{Code Example}
-\begin{singlespacing}
-    \begin{lstlisting}
-#include <stdio.h>
-#include <stdlib.h>
+\section*{Work Experience}
 
-int main(void) {
-    printf("Hello, World!");
-    return EXIT_SUCCESS;
-}\end{lstlisting}
-\end{singlespacing}
+\company{Health Innovation Incubator}{Watervliet, NY}{March 2026 -- Present}
+\textit{Intern}
+\begin{itemize}
+	\item Working on a communication device for hospitalized children with disabilities to express non-urgent needs (e.g., food, water, medication refills) to nurses.
+	\item Contributing to the design of the modular, customizable communication device platform so can be tailored to each child’s abilities.
+	\item Contributing to the design of a scalable wireless protocol capable of supporting hundreds of communication devices within a hospital environment.
+\end{itemize}
 
+\company{HarcoSemco}{Branford, CT}{May 2025 -- August 2025}
+\textit{Engineering and Quality Intern}
+\begin{itemize}
+    \item Led the development of a Bluetooth-based asset tracking system for an aerospace manufacturing environment.
+    \item Designed the gateway-tag network architecture, selected hardware components, and developed software in C++, Java, and Kotlin, deploying a system capable of tracking assets across a 12,000 sq. ft. facility with 8-foot positional accuracy.
+    \item Engineered C++ software for toxic gas detection using Bosch sensors, transmitting environmental data via Bluetooth. Developed a React TypeScript dashboard using Web Bluetooth to display real-time sensor readings, ensuring compliance with aerospace safety and quality protocols.
+\end{itemize}
+
+\company{Scientific Computation Research Center}{Troy, NY}{August 2022 -- Present}
+\textit{Research Assistant}
+\begin{itemize}
+    \item Implemented a GPU memory pool to reduce runtime by 30\% for Omega\_h, a C++ library for mesh adaptivity.
+    \item Developed a C++ algorithm to compute the nearest simplex to a point in an n-dimensional mesh for PCMS, a mesh coupling library.
+    \item Authored a scientific paper in \LaTeX\,and presented the work at the Spring 2024 RPI Undergraduate Research Symposium.
+\end{itemize}
+
+\company{Mercer X Lab}{Troy, NY}{January 2025 -- May 2025}
+\textit{Lab Assistant}
+\begin{itemize}
+	\item Guided students in safety best practices, circuit design, soldering, and proper lab equipment usage.
+\end{itemize}
+
+\section*{Project Experience}
+
+\subsection*{Open Algebra Software for Inferring Solutions (OASIS)}
+\begin{itemize}
+	\item Currently leading the development of the OASIS project, an open-source C++ library for computer algebra and symbolic manipulation, coordinating contributors and managing development workflows using GitHub Issues, Projects, and Pull Requests. Implemented GitHub Actions CI/CD pipelines to automate building and unit testing, improving code reliability and streamlining the development process.
+\end{itemize}
+
+\subsection*{Eye Robot}
+\begin{itemize}
+    \item Eye Robot is a navigation robot designed to assist visually impaired users. Collaborated on a team to develop C\# and C++ software that constructs a 3D model of the environment using LiDAR and transmits navigation
+    commands to an onboard ESP32 microcontroller.
+\end{itemize}
+
+\subsection*{Helpful Assessment Readiness Platform}
+\begin{itemize}
+    \item Won Best AI Hack and Best Use of DigitalOcean Gradient AI at HackRPI 2025 by developing a mock interview platform that uses AI agents to simulate interviewer personas and provide automated feedback to users.
+\end{itemize}
 \end{document}
