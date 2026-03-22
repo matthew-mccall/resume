@@ -7,6 +7,8 @@
     Path            = fonts/Libertinus_Serif/,
     UprightFont     = *-Regular,
     ItalicFont      = *-Italic,
+    FontFace        = {sb}{n}{*-SemiBold},
+    FontFace        = {sb}{it}{*-SemiBoldItalic},
     BoldFont        = *-Bold,
     BoldItalicFont  = *-BoldItalic]
 
@@ -34,7 +36,7 @@
 
 % Reduce vertical spacing for list items
 % itemsep = space between items, topsep = space above/below the list
-\setlist[itemize]{itemsep=0.2em, topsep=0.3em, parsep=0pt, partopsep=0pt, leftmargin=1em}
+\setlist[itemize]{itemsep=0.0em, topsep=0.3em, parsep=0pt, partopsep=0pt, leftmargin=1em}
 
 % Reduce paragraph spacing and set base line stretch
 % parskip: minimal space between paragraphs; parindent: no indent for resume style
@@ -44,15 +46,15 @@
 
 % Heading sizes and spacing (requires titlesec package)
 % Section > Subsection > Subsubsection, all larger than base 11pt
-\titleformat{\section}{\bfseries\fontsize{14pt}{14pt}\selectfont}{}{0pt}{}
-\titlespacing*{\section}{0pt}{1ex}{0.5ex}
+\titleformat{\section}{\titlerule[1pt]\vspace{4.5pt}\bfseries\fontsize{14pt}{14pt}\selectfont}{}{0pt}{}
+\titlespacing*{\section}{0pt}{3ex}{0.5ex}
 
 \titleformat{\subsection}{\bfseries\fontsize{12pt}{12pt}\selectfont}{}{0pt}{}
-\titlespacing*{\subsection}{0pt}{0.8ex}{0pt}
+\titlespacing*{\subsection}{0pt}{1ex}{0pt}
 
 \titleformat{\subsubsection}{\bfseries\fontsize{11pt}{11pt}\selectfont}{}{0pt}{}
 \titlespacing*{\subsubsection}{0pt}{0.6ex}{0pt}
 
 \newcommand{\company}[3]{%
-  \subsection*{\makebox[\textwidth]{#1 \,\textnormal{\textbullet}\, #2 \hfill \fontsize{11pt}{11pt}\selectfont#3}}%
+  \subsection*{\makebox[\textwidth]{#1 \,\textnormal{\textbullet}\, #2 \hfill \fontseries{sb}\fontsize{11pt}{11pt}\selectfont#3}}%
 }
