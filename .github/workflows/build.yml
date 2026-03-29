@@ -15,7 +15,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Build PDF
-        run: latexmk -interaction=nonstopmode
+        run: latexmk -interaction=nonstopmode MatthewMcCall.tex
 
       - name: Upload PDF artifact
         uses: actions/upload-artifact@v4
