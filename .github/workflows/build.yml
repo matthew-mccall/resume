@@ -12,13 +12,13 @@ jobs:
     container: ghcr.io/matthew-mccall/dockerfiles/texlive:main
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Build PDF
         run: latexmk -interaction=nonstopmode MatthewMcCall.tex
 
       - name: Upload PDF artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: resume-pdf
           path: out/MatthewMcCall.pdf
